@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./my-app/src/index.css">
+    <title>Cadastro de participantes</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="index.html">GENERATION</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">SOBRE NÓS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="inscricoes.html">INSCRIÇÕES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">CONTATO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="container-inscricoes">
+
+      <main id="container-principal">
+        <h1 class="titulo-inscreva">Se inscreva já!</h1>
+        <form class="row g-3" method="post" action="">
+          <div class="col-md-6">
+            <label for="inputNome" class="form-label">Nome</label>
+            <input type="name" class="form-control" id="inputNome">
+            <span id="retornoNome"></span>
+          </div>
+          <div class="col-md-6">
+            <label for="inputData" class="form-label">Data de nascimento</label>
+            <input type="date" class="form-control" id="inputData">
+            <span id="retornoData"></span>
+          </div>
+          <div class="col-md-6">
+            <label for="inputPeriodo" class="form-label">Período</label>
+            <input type="text" class="form-control" id="inputPeriodo">
+            <span id="retornoPeriodo"></span>
+          </div>
+          <div class="col-md-6">
+            <label for="inputCurso" class="form-label">Tipo de curso (Presencial ou EAD)</label>
+            <input type="text" class="form-control" id="inputCurso">
+            <span id="inputCurso"></span>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Aceito os termos de Política e Privacidade
+              </label>
+            </div>
+          </div>
+          <div class="col-12 inscricao">
+            <button type="submit" id="btnInscrever" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Inscrever</button>
+          </div>
+          <span id="retornoSucesso"></span>
+        </form>
+<!-- MODAL -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-black" id="staticBackdropLabel">Inscrição realizada!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-black">
+                Parabéns! Você realizou sua inscrição.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- MODAL -->
+      </main>      
+      <aside id="container-secundario">
+        <a href="">
+          <img src="./assets/imagem-container.jpg" width="60%" alt="ilustração de uma mulher apontando para código no notebook">
+        </a>
+        <a href="https://br.freepik.com/fotos-vetores-gratis/css" class="creditos-img">Css vetor criado por vectorjuice - br.freepik.com</a>
+      </aside>
+
+    </section>
+
+    <footer class="page-footer font-small blue bg-primary footer">
+        <div class="footer-copyright text-center py-3">© 2022 Copyright</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="../index.js"></script>
+    <script src="../front-end/models/formulario.js"></script>
+
+</body>
+
+</html>
