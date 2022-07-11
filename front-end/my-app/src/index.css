@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-link{
+    color: white;
+}
+
+#container-index, #container-inscricoes, #container-principal, #container-secundario{
+    display: flex;
+}
+
+#container-inscricoes{
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+#container-index{
+    margin-top: 1.5%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container-principal{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin: 2%;
+    padding: 2%;
+    width: 50%;
+    background-color: #FCB346;
+    border-radius: 50px 20px 50px 20px;
+}
+
+#container-secundario{
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    width: 50%;
+}
+
+#container-secundario a{
+    text-align: center;
+}
+
+.creditos-img{
+    font-size: 0.5em;
+    color: #000;
+    text-align: center;
+}
+
+.inscricao{
+    display: flex;        
+    justify-content: center;
+}
+
+.footer{
+    width: 100%;
+}
+
+.titulo-inscreva, .titulo-index{
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo-inscreva{
+    margin-bottom: 5%;
+    text-align: center;
+    color: #000000;
+}
+
+.titulo-index{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 5%;
+
+}
+
+.btnInscreva{
+    margin: 1%;
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    #container-inscricoes{
+        flex-direction: column-reverse;
+    }
+
+    #container-principal{
+        width: 90%;
+        justify-content: center;
+        align-self: center;
+        border-radius: 15px;
+    }
+
+    #container-secundario{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    #btnInscrever{
+        display: flex;
+    }
+
+    .titulo-index{
+        margin-top: 15%;
+    }
+}
